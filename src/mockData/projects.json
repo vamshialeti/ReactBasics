@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "name": "Employee Portal",
+      "description": "An employee portal app is a digital platform designed to streamline communication, collaboration, and management tasks within an organization. ",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "Add new employees list",
+          "status": "Progress"
+        },
+        {
+          "id": 2,
+          "name": "Display employee list",
+          "status": "Complete"
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Stock Overflow",
+      "description": "The Stack Overflow app is a mobile application that provides access to Stack Overflow, a popular online community and Q&A platform for developers and programmers",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "Implement search functionality",
+          "status": "Incomplete"
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "name": "Skills Management",
+      "description": "Skills management is the process of identifying, developing, and utilizing the skills of employees within an organization.",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "Add Employee skills",
+          "status": "Incomplete"
+        }
+      ]
+    }
+
+  ]
+  

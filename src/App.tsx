@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ProjectProvider } from './context/ProjectContext';
+import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import DashboardPage from './pages/DashboardPage';
+import GlobalStyles from './styles/GlobalStyles';
 
-function App() {
+// function App() {
+//   return (
+//     <div className="App">
+//           <h1> Project Management </h1>
+//     </div>
+//   );
+// }
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProjectProvider>
+      <GlobalStyles />
+      <Router>
+        <Routes>
+          <Route path="/"  element={ <DashboardPage /> } />
+        </Routes>
+      </Router>
+    </ProjectProvider>
   );
-}
+};
 
 export default App;
